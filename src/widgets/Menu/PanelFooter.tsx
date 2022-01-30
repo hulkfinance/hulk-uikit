@@ -57,8 +57,8 @@ const SocialEntry = styled.div`
 const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
-  toggleTheme,
-  isDark,
+  // toggleTheme,
+  // isDark,
   cakePriceUsd,
   cakePriceLink,
   currentLang,
@@ -89,7 +89,7 @@ const PanelFooter: React.FC<Props> = ({
       </SocialEntry>
       <SettingsEntry>
         <Flex >
-          {socials.map((social, index) => {
+          {socials.map((social) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
             // const mr = index < socials.length - 1 ? "20px" : 0;

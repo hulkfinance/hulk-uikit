@@ -97,7 +97,7 @@ export const links = [
   },
 ];
 
-export const socials = [
+export const socials: {label: string, icon: string, href: string, items?: {label: string, href: string, }[] }[] = [
   // {
   //   label: "Github",
   //   icon: "GithubIcon",
